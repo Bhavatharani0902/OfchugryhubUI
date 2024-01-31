@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>User Cart</h2>
+    <table class="table" style="width: 500px;">
+      <thead>
+        <tr>
+          <th>User ID</th>
+          <th>Menu Item ID</th>
+          <th>Restaurant ID</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cartitem of usercart">
+          <td>{{ cartitem.userId }}</td>
+          <td>{{ cartitem.menuItemId }}</td>
+          <td>{{ cartitem.restaurantId }}</td>
+          <td>{{ cartitem.quantity }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
